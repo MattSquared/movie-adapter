@@ -1,0 +1,25 @@
+{
+  "name": "movie-adapter",
+  "version": "1.0.0",
+  "description": "Adapter service that using OMDB and NYTimes API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattSquared/movie-adapter.git"
+  },
+  "author": "Carpella Matteo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MattSquared/movie-adapter/issues"
+  },
+  "homepage": "https://github.com/MattSquared/movie-adapter#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}
