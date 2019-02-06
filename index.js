@@ -8,7 +8,6 @@ app.listen(PORT, () => {
   console.log('Server running on port ' + PORT)
 })
 
-// get movie info
 app.get('/getMovie', (req, res, next) => {
   calls.getMovie(req.query.id, calls.getReview, res)
 })
