@@ -6,6 +6,12 @@ const model = require('./model')
 const OMDB_URL = 'http://www.omdbapi.com/'
 const NYT_URL = 'https://api.nytimes.com/svc/movies/v2/reviews/search.json'
 
+/**
+ * Return movie information from OMDB API by imdb_id
+ * @param {fucntion} getReview - callback function
+ * @param {Message} msg - Telegram Message object
+ * @param {Object} res - response object
+ */
 exports.getMovie = function (id, getReview, res) {
   let answer = {
     response: {},
@@ -42,6 +48,10 @@ exports.getMovie = function (id, getReview, res) {
   })
 }
 
+/**
+ * Return review for a movie from NYTimes API
+ * @param {Object} res - response object
+ */
 exports.getReview = function (movie, res) {
   let answer = {
     response: {},
@@ -72,6 +82,7 @@ exports.getReview = function (movie, res) {
   })
 }
 
+// return string with the first char in lower case
 String.prototype.uncapitalize = function () {
   return this.charAt(0).toLowerCase() + this.slice(1)
 }
